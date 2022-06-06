@@ -1,0 +1,69 @@
+@import url("//fonts.googleapis.com/css?family=Yellowtail");
+
+
+.page-heading {
+    /*background-image: url('./Beach.jpg');*/
+    background-color: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+
+    
+    border-radius: 1rem;
+    box-shadow:  0 0 10px  rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 0 10px  rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0 0 10px  rgba(0,0,0,0.4);
+    -o-box-shadow: 0 0 10px  rgba(0,0,0,0.4);
+
+    font-family: Yellowtail;
+    color: black;
+    padding-left: 1rem;
+    padding-top: 2.7rem;
+
+    height: 20rem;
+    max-height: 20rem;
+}
+
+.weather {
+    height: 20rem;
+    max-height: 20rem;
+    /*background-image: url('./weatherBackground.jpeg');*/
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 1rem;
+    box-shadow:  0 0 10px  rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 0 10px  rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0 0 10px  rgba(0,0,0,0.4);
+    -o-box-shadow: 0 0 10px  rgba(0,0,0,0.4);
+
+    font-family: Yellowtail;
+    color: black;
+    padding-top: 2.7rem;
+
+    margin-right: 0;
+}
+
+.tempDisplay {
+    color: black;
+
+    border-radius: 1rem;
+    padding: 1rem 0rem;
+    margin: 4rem 2rem;
+    margin-bottom: 0.3rem;
+}
+
+.font-styling {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.weather-styling {
+    margin-top: -3rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+

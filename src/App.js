@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import './CalorieTracker.css';
+import './TaskTracker.css';
+import './PageHeading.css';
+import PageHeading from './page-heading/PageHeading.js';
+import Weather from './page-heading/Weather';
+
+import TaskTrack from './task-tracker/TaskTrack';
+
+import CalorieTracker from './Calorie/CalorieTracker';
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <div className='row m-1'>
+          <div className='col-4'>
+            <PageHeading />
+          </div>
+          <div className='col-4'>
+            <Weather />
+          </div>
+          <div className='col-4'>
+            <CalorieTracker />
+          </div>
+        </div>
+        <div className='row m-4'>
+          <div className='col-6 '>
+            <TaskTrack />
+          </div>
+        </div>
     </div>
   );
 }
-
 export default App;

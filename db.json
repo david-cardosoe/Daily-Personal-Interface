@@ -1,0 +1,18 @@
+{
+  "tasks": [
+    {
+      "text": "PlaceHolder",
+      "day": "PlaceHolder",
+      "id": 1
+    },
+    {
+      "text": "Spacing Test",
+      "day": "Spacing Test",
+      "id": 2
+    }
+  ],
+  "food": {
+    "cals": 0,
+    "pro": 0
+  }
+}

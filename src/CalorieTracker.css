@@ -1,0 +1,15 @@
+
+.calorieTracker {
+    height: 20rem;
+    max-height: 20rem;
+
+    border-radius: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow:  0 0 10px  rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 0 10px  rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0 0 10px  rgba(0,0,0,0.4);
+    -o-box-shadow: 0 0 10px  rgba(0,0,0,0.4);
+
+    padding-top: 2.7rem;
+}

@@ -1,0 +1,17 @@
+.ttMain {
+    overflow: auto;
+    min-height: 15.625rem;
+
+    border-radius: 1rem;
+    box-shadow:  0 0 10px  rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 0 10px  rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0 0 10px  rgba(0,0,0,0.4);
+    -o-box-shadow: 0 0 10px  rgba(0,0,0,0.4);
+
+    padding: 30px;
+}
+
+.indv-task-styling {
+    border: 2px solid lightgrey;
+    border-radius: 1rem;
+}
