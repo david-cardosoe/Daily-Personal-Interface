@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 
 
-const AddTasksForm = ({ onAdd }) => {
+const AddTasksForm = ({ onAdd, sendText }) => {
 
     const [text, setText] = useState('');
     const [day, setDay] = useState('');
@@ -16,6 +16,19 @@ const AddTasksForm = ({ onAdd }) => {
         }
 
         onAdd({text,day});
+
+        //sends me and jessica a text when I add a task
+        const me = '7604157243';
+        //const jess = '7609367260';
+        //const forJess = "David added a new task: ";
+        const forMe = "New Task: "
+        //sendText(jess, (forJess + text + '@' + day));
+        if(!day) {
+            sendText(me, (forMe + text));
+        }
+        else {
+            sendText(me, (forMe + text + ' @ ' + day));
+        }
 
         setText('');
         setDay('');

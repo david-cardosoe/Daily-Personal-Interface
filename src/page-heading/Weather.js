@@ -1,23 +1,27 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
-
+/*
 const api = {
     key: "366daa4315568ac22e39da33f02a4e56",
     base: "https://api.openweathermap.org/data/2.5/"
 }
+*/
 
-const Weather = () => {
-    const [weather, setWeather] = useState({});
+const Weather = ({ weather }) => {
+    //const [weather, setWeather] = useState({});
     const [unitsDisplay, setUnitsDisplay] = useState(false);
 
+    /*
     useEffect(() => {
         fetch(`${api.base}weather?q=encinitas&units=imperial&appid=${api.key}`)
             .then(response => response.json())
             .then(result => {
                 setWeather(result);
                 console.log(result);
+                morningText(result.main.temp, result.main.temp_max, result.main.temp_min);
             })
     }, []);
+    */
 
     const changeUnits = () => {
         setUnitsDisplay(!unitsDisplay);

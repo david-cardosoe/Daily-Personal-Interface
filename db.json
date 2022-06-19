@@ -1,14 +1,9 @@
 {
   "tasks": [
     {
-      "text": "PlaceHolder",
-      "day": "PlaceHolder",
+      "text": "New Task",
+      "day": "June 19th",
       "id": 1
-    },
-    {
-      "text": "Spacing Test",
-      "day": "Spacing Test",
-      "id": 2
     }
   ],
   "food": {

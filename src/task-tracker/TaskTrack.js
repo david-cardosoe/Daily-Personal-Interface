@@ -6,7 +6,7 @@ import TaskTrackHeader from './TaskTrackHeader';
 import AddTasksForm from './AddTasksForm';
 import TasksDisplay from './TasksDisplay';
 
-const TaskTrack = () => {
+const TaskTrack = ({ sendText }) => {
     const [addTasks, setAddTasks] = useState(false);
     const [tasks, setTasks] = useState([]);
 
@@ -60,7 +60,7 @@ const TaskTrack = () => {
     <div className='container ttMain w-75'>
         <div>
             <TaskTrackHeader addTasks={addTasks} onAC={() => setAddTasks(!addTasks)} />
-            {addTasks && <AddTasksForm onAdd={addTask} />}
+            {addTasks && <AddTasksForm onAdd={addTask} sendText={sendText} />}
             <TasksDisplay tasks={tasks} onDelete={onDelete} />
         </div>
     </div>

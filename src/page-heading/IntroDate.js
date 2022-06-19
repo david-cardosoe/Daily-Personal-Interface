@@ -1,21 +1,19 @@
 import React from 'react'
-import { useState, useEffect } from 'react';
+//import { useState, useEffect } from 'react';
 
-const IntroDate = () => {
+const IntroDate = ({ today }) => {
     const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    /*
+    Should maybe create rec and txtm states for both me and jessica, as well as including 
+    the weather and tasks I have to complete for the day in the message.
+    Also set up times for the morning to send me a text when I wake up and a reminder maybe 
+    in the afternoon as well, so make sure to edit the specific time we want to message sent out,
+    maybe we can host the website on netlify.
+    */
 
-    const [today, setDate] = useState(new Date());
 
-    useEffect(() => {
-        const timer = setInterval(() => {
-            setDate(new Date());
-        }, 1 * 1000);
-        return () => {
-            clearInterval(timer);
-        }
-    }, []);
-
+    //Getting and formatting date
     const day = today.getDate();
     const month = today.getMonth();
     const dayOfWeek = today.getDay();

@@ -3,7 +3,7 @@
 
 .page-heading {
     /*background-image: url('./Beach.jpg');*/
-    background-color: white;
+    background-color: rgba(244, 244, 244, 0.5);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
@@ -31,7 +31,7 @@
     height: 20rem;
     max-height: 20rem;
     /*background-image: url('./weatherBackground.jpeg');*/
-    background-color: white;
+    background-color: rgba(244, 244, 244, 0.5);
     background-size: cover;
     background-position: center;
 
